@@ -1,7 +1,11 @@
 //Modify this file to change what commands output to your statusbar, and recompile using the make command.
 static const Block blocks[] = {
 	/*Icon*/	/*Command*/		/*Update Interval*/	/*Update Signal*/
-	 {"⌨", "sb-kbselect", 0, 30}, 
+	{"",	"sb-todo",	5,	11},
+	{"",	"sb-volume",	0,	10},
+	 {"", "sb-kbselect", 1, 30}, 
+	{"",	"vpn_widget.sh",	5,	6},
+	{"",	"sb-internet",	5,	4},
 	//{"", "cat /tmp/recordingicon 2>/dev/null",	0,	9},
 	//{"",	"sb-tasks",	10,	26},
 	//{"",	"sb-music",	0,	11},
@@ -14,6 +18,7 @@ static const Block blocks[] = {
 	/* {"",	"sb-price eth Ethereum 🍸",	9000,	23}, */
 	/* {"",	"sb-price btc Bitcoin 💰",				9000,	21}, */
 	//{"",	"sb-torrent",	20,	7},
+	 {"",	"sb-disk",	10,	16}, 
 	 {"",	"sb-memory",	10,	14}, 
 	 {"",	"sb-cpu",		10,	18}, 
 	/* {"",	"sb-moonphase",	18000,	17}, */
@@ -21,10 +26,8 @@ static const Block blocks[] = {
 	{"",	"sb-forecast",	3600,	5},
 	//{"",	"sb-mailbox",	180,	12},
 	//{"",	"sb-nettraf",	1,	16},
-	{"",	"sb-volume",	0,	10},
-	//{"",	"sb-battery",	5,	3},
-	{"",	"sb-internet",	5,	4},
-	 {"",	"sb-clock",	0,	1}
+	{"",	"sb-battery",	5,	3},
+	 {"",	"sb-clock",	1,	9},
 	//{"",	"sb-help-icon",	0,	15},
 };
 
